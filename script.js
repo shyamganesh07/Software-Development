@@ -10,7 +10,7 @@ document.getElementById("searchHotels").addEventListener("click", function () {
 
     // Simulate hotel search results
     const hotelList = [
-        { id: 1, name: "Hotel Sunshine", location: "ooty", price_per_night: 2000 },
+        { id: 1, name: "Hotel Sunshine", location: "ooty", price_per_night: 2 },
         { id: 2, name: "Lakeview Inn", location: "kodaikanal", price_per_night: 1500 },
         { id: 3, name: "Tea Valley Resort", location: "munnar", price_per_night: 2500 },
     ];
