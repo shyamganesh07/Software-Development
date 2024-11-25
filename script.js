@@ -40,7 +40,7 @@ document.getElementById("payNow").addEventListener("click", function () {
     const paymentMethod = document.getElementById("paymentMethod").value;
 
     if (paymentMethod === "gpay") {
-        const upiId = "ganesh442006@okicici"; // Replace with your UPI ID
+        const upiId = "ganesh442006@okhdfcbank"; // Replace with your UPI ID
         const amount = 2; // Replace with dynamically calculated amount if needed
         const transactionNote = "Hotel Booking Payment";
 
