@@ -1,64 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-h1, h2 {
-    color: #4CAF50;
-}
-
-main {
-    padding: 2rem;
-}
-
-form, #results {
-    background: white;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    max-width: 500px;
-    margin: 1rem auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-form label, select, input {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 10px;
-    background: #f4f4f9;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Stay</h1>
+    </header>
+    <main>
+        <section id="search">
+            <h2>Search for Hotels</h2>
+            <form id="bookingForm">
+                <label for="location">Choose Location:</label>
+                <select id="location" name="location" required>
+                    <option value="ooty">Ooty</option>
+                    <option value="kodaikanal">Kodaikanal</option>
+                    <option value="munnar">Munnar</option>
+                </select>
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <button type="button" id="searchHotels">Search Hotels</button>
+            </form>
+        </section>
+        <section id="results" style="display: none;">
+            <h2>Available Hotels</h2>
+            <ul id="hotelList"></ul>
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" required>
+                <option value="gpay">Google Pay</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="button" id="payNow">Pay Now</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hotel Booking</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
